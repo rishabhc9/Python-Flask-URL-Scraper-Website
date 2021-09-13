@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="jumbotron">
+    <h1>Scrape URLS From Websites</h1>
+    <form action="/" method="POST">
+
+        <div class="form-group">
+          <input style="border-color: #232323;"type="text" class="form-control" id="url" name="url" placeholder="Enter A Valid URL">
+        </div>
+        <button type="submit" class="btn btn-outline-dark">Scrape</button>
+      </form>
+      <br>
+      <h5>Scraped URLS:<h5>
+      <h6>{{ value }}</h6>
+      
+</div>
+
+ <div class="hover-effect1">
+	<ul>
+		<li><a href="https://www.github.com/rishabhc9"><i class="fa fa-github"></i></a></li>
+		<li><a href="https://www.linkedin.com/in/rishabh-chopda-16b378151"><i class="fa fa-linkedin"></i></a></li>
+		<li><a href="mailto:aaditchopda2@gmail.com"><i class="fa fa-envelope"></i></a></li>
+		<li><a href="https://rishabhc9.github.io/rishabhchopda/"><i class="fa fa-globe"></i></a></li>
+	</ul>
+</div>
+
+
+
+<style>
+
+* { margin: 0px; padding: 0px; overflow-x:auto; }
+
+/**Icon Hover Effect 1**/
+.hover-effect1 { min-height: 200px; background: #232323; text-align: center; }
+.hover-effect1 ul { padding-top: 65px;}
+.hover-effect1 ul li { display: inline-block; }
+.hover-effect1 ul li a { font-size: 40px; color: #fff; margin: 0px 10px; line-height: 85px; display: inline-block; width: 80px; height: 80px; background: #3acbf7; -webkit-transition: all .6s ease; -moz-transition: all .6s ease; -ms-transition: all .6s ease; -o-transition: all .6s ease; transition: all .6s ease; }
+.hover-effect1 ul li:hover a { border-radius: 50%; background: #8418ff; -moz-transform: rotate(360deg); -webkit-transform: rotate(360deg); -o-transform: rotate(360deg); -ms-transform: rotate(360deg); transform: rotate(360deg); }
+
+</style>
+
+
+{% endblock %}
+
+
